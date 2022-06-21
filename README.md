@@ -1,2 +1,12 @@
-# AboutMeLab
-Code 201 Lab 02
+# LAB - 02
+
+## AboutMeLab
+
+### Author: Daniel Frey
+
+### Links and Resources
+
+- 
+
+### Reflections and Comments
+
