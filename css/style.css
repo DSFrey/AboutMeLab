@@ -1,0 +1,54 @@
+/*
+    FILE: style.css
+    DATE: 2022-06-21
+    AUTHOR: DSFrey
+    DESCRIPTION:  General styling
+*/
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/86/Cedar_Rapids_-_Mays_Island.jpg);
+    background-size: 100%;
+}
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #C8102E;
+    color: #F1BE48;
+}
+header p {
+    text-align: center;
+}
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245, .8);
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin: 10px;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin: 20px 10px 10px 10px;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+footer {
+    position: sticky;
+    bottom: 0px;
+    text-align: center;
+    background-color: #C8102E;
+    color:#F1BE48;
+}

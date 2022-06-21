@@ -6,7 +6,6 @@ AUTHOR: DSFrey
 'use strict';
 
 var userName
-var quizScore = 0
 function initialize() {
     console.log('in initialize()');
     greeting()
@@ -21,6 +20,7 @@ function prepareQuiz() {
     document.getElementById("runQuiz").addEventListener("click", quiz);
 }
 function quiz() {
+    let quizScore = 0
     let question1 = prompt('Was I born already old? yes/no').toLowerCase();
     switch (question1) {
         case ('yes'):
