@@ -35,9 +35,17 @@ h2 {
     font-size: large;
     margin: 20px 10px 10px 10px;
 }
-p {
+p, ul {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
+    list-style: disc;
+    list-style-position: inside;
+}
+ol {
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    list-style: decimal inside;
 }
 button {
     margin: 0 auto;
