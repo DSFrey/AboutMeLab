@@ -32,100 +32,13 @@ function quiz() {
     for (let i = 0; i < quizContent.length; i++) {
         let answerGiven = prompt(quizContent[i][0]).toLowerCase();
         if ((answerGiven == 'yes') || (answerGiven == 'no')) {
-            output = quizContent[i][2 + (answerGiven == quizContent[i][1])]
-            quizScore += (answerGiven == quizContent[i][1])
+            output = quizContent[i][2 + (answerGiven == quizContent[i][1])];
+            quizScore += (answerGiven == quizContent[i][1]);
         } else {
             output = `Please follow the directions. No points for you.`;
         }
         alert(output)
     }
-/*
-Old code for first 5 questions.
-    let question1 = prompt('Was I born already old? yes/no').toLowerCase();
-    switch (question1) {
-        case ('yes'):
-            // console.log('Incorrect');
-            output = `What? No, that doesn't make any sense.`;
-            break;
-        case ('no'):
-            // console.log('Correct');
-            quizScore++;
-            output = `That's correct!`;
-            break;
-        default:
-            // console.log('Incomplete');
-            output = `Please follow the directions. No points for you.`;
-    }
-    alert(output)
-
-    let question2 = prompt('Am I an Iowa Hawkeye? yes/no').toLowerCase();
-    switch (question2) {
-        case ('yes'):
-            // console.log('Incorrect');
-            output = `Ew, gross. Go Cyclones!`;
-            break;
-        case ('no'):
-            // console.log('Correct');
-            quizScore++;
-            output = `That's right! Go Cyclones!`;
-            break;
-        default:
-            // console.log('Incomplete');
-            output = `Please follow the directions. No points for you.`;
-    }
-    alert(output)
-
-    let question3 = prompt('Have I spent time wrangling children at summer camp? yes/no').toLowerCase();
-    switch (question3) {
-        case ('yes'):
-            // console.log('Correct');
-            output = `Yep. That was tiring.`;
-            quizScore++;
-            break;
-        case ('no'):
-            // console.log('Incorrect');
-            output = `Actually I have, or at least I tried to, even if it is like herding cats.`;
-            break;
-        default:
-            // console.log('Incomplete');
-            output = `Please follow the directions. No points for you.`;
-    }
-    alert(output)
-
-    let question4 = prompt('Did I have a job selling used books? yes/no').toLowerCase();
-    switch (question4) {
-        case ('yes'):
-            // console.log('Correct');
-            output = `Yep. Lots of interesting stuff came through there.`;
-            quizScore++;
-            break;
-        case ('no'):
-            // console.log('Incorrect');
-            output = `I actually did, sorry.`;
-            break;
-        default:
-            // console.log('Incomplete');
-            output = `Please follow the directions. No points for you.`;
-    }
-    alert(output)
-
-    let question5 = prompt('Do I want to become a mushroom farmer? yes/no').toLowerCase();
-    switch (question5) {
-        case ('yes'):
-            // console.log('Incorrect');
-            output = `You know, I think I'll take a pass on that job.`;
-            break;
-        case ('no'):
-            // console.log('Correct');
-            quizScore++;
-            output = `Yeah, let's stick to computers.`;
-            break;
-        default:
-            // console.log('Incomplete');
-            output = `Please follow the directions. No points for you.`;
-    }
-    alert(output)
-*/
     let question6
     let targetNumber = Math.floor(Math.random() * 10 + 1)
     for (let i = 0; (question6 !== targetNumber) && (i < 4); i++) {
