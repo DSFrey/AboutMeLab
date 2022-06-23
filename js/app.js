@@ -32,12 +32,8 @@ function quiz() {
     for (let i = 0; i < quizContent.length; i++) {
         let answerGiven = prompt(quizContent[i][0]).toLowerCase();
         if ((answerGiven == 'yes') || (answerGiven == 'no')) {
-            if (answerGiven == quizContent[i][1]) {
-                output = quizContent[i][3];
-                quizScore++;
-            } else {
-                output = quizContent[i][2];
-            }
+            output = quizContent[i][2 + (answerGiven == quizContent[i][1])]
+            quizScore += (answerGiven == quizContent[i][1])
         } else {
             output = `Please follow the directions. No points for you.`;
         }
