@@ -30,3 +30,7 @@ I estimated I would take about 1.5 hours to finish the lab, and I ended up takin
 I am quite happy with how this went. The two new questions were pretty easy, nut moving the earlier questions to an array proved to be a fun new challenge. I found it pretty annoying that js can sometimes interpret a boolean as an integer, but other times it cannot.
 
 I estimated 3 or 4 hours initially and it took about 5 hours. I ended up spending more time in class discussion than I expected, but was still on the top end or over what I predicted.
+
+Driver: Josh Boyles
+
+Navigator: Daniel Frey

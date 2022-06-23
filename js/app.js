@@ -22,6 +22,8 @@ function prepareQuiz() {
 function quiz() {
     let quizScore = 0;
     let output;
+    let answerGiven ;
+    let isCorrect ;
     let quizContent = [
         [`Was I born already old? yes/no`,`no`,`What? No, that doesn't make any sense.`,`That's correct!`],
         [`Am I an Iowa Hawkeye? yes/no`,`no`,`Ew, gross. Go Cyclones!`,`That's right! Go Cyclones!`],
@@ -30,10 +32,11 @@ function quiz() {
         [`Do I want to become a mushroom farmer? yes/no`,`no`,`You know, I think I'll take a pass on that job.`,`Yeah, I agree. Let's stick to computers.`]
     ];
     for (let i = 0; i < quizContent.length; i++) {
-        let answerGiven = prompt(quizContent[i][0]).toLowerCase();
+        answerGiven = prompt(quizContent[i][0]).toLowerCase();
         if ((answerGiven == 'yes') || (answerGiven == 'no')) {
-            output = quizContent[i][2 + (answerGiven == quizContent[i][1])];
-            quizScore += (answerGiven == quizContent[i][1]);
+            isCorrect = (answerGiven == quizContent[i][1])
+            output = quizContent[i][2 + isCorrect];
+            quizScore += isCorrect;
         } else {
             output = `Please follow the directions. No points for you.`;
         }
